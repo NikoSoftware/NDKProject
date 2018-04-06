@@ -18,4 +18,18 @@ public class Hello {
     public static native String callStaticMethod();
 
 
+    public static native String callObjectMethod(String data);
+
+    /**
+     * java 动态方法
+     * @param data
+     * @return
+     */
+    public String sayWord(String data){
+
+
+        return "\""+data+"\" is from a java instance methon";
+    }
+
+
 }
