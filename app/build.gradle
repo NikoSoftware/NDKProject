@@ -35,4 +35,9 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.11' //一定要添加dagger2的annotationProcessor！
+    compile 'com.google.dagger:dagger-android:2.11'
+    compile 'com.google.dagger:dagger-android-support:2.11' // if you use the support libraries
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.11'
 }

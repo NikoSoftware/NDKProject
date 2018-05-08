@@ -1,4 +1,4 @@
-package com.example.niko.ndkproject;
+package com.example.niko.ndkproject.model;
 
 public class Hello {
 

@@ -12,26 +12,32 @@
         android:orientation="vertical"
         >
     <TextView
-        android:id="@+id/sample_text"
+        android:id="@+id/tv_jump"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="跳转到NDK" />
 
-        <EditText
-            android:id="@+id/et_check"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/bt_A"
+            android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:hint="输入NDK验证信息"
+            android:layout_margin="20dp"
+            android:text="A"
             />
         <Button
             android:id="@+id/bt_check"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_margin="20dp"
-            android:text="java 静态方法调C语言 C语言再调 Java实例方法"
+            android:text="B"
             />
-
+        <Button
+            android:id="@+id/bt_C"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_margin="20dp"
+            android:text="C"
+            />
 
 
 

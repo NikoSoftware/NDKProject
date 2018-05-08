@@ -1,12 +1,18 @@
-package com.example.niko.ndkproject;
+package com.example.niko.ndkproject.activity;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.example.niko.ndkproject.R;
+import com.example.niko.ndkproject.model.Hello;
+
+import dagger.android.AndroidInjection;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,10 +25,14 @@ public class MainActivity extends AppCompatActivity {
     private EditText etCheck;
     private Button btCheck;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        AndroidInjection.inject(this);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         // Example of a call to a native method
         tv = (TextView) findViewById(R.id.sample_text);
@@ -41,13 +51,20 @@ public class MainActivity extends AppCompatActivity {
 
                 etCheck.setText(null);
 
+
             }
         });
 
 
 
-
         tv.setText(Hello.callStaticMethod());
+    }
+
+
+    public void showToast(String text) {
+
+        Toast.makeText(this, text, Toast.LENGTH_SHORT).show();
+
     }
 
     /**

@@ -18,7 +18,7 @@ import static org.junit.Assert.*;
 public class ExampleInstrumentedTest {
     @Test
     public void useAppContext() {
-        // Context of the app under test.
+        // Context of the App under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
         assertEquals("com.example.niko.ndkproject", appContext.getPackageName());
